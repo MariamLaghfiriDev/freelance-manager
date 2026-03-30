@@ -3,6 +3,12 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { ClientsModule } from './clients/clients.module';
+import { ProjectsModule } from './projects/projects.module';
+import { TasksModule } from './tasks/tasks.module';
+import { ExpensesModule } from './expenses/expenses.module';
+import { InvoicesModule } from './invoices/invoices.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
   imports: [
@@ -25,6 +31,12 @@ import { UsersModule } from './users/users.module';
     }),
     AuthModule,
     UsersModule,
+    ClientsModule,
+    ProjectsModule,
+    TasksModule,
+    ExpensesModule,
+    InvoicesModule,
+    DashboardModule,
   ],
 })
 export class AppModule {}
